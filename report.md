@@ -15,7 +15,7 @@ Note that you do not need to type "$"
 If it your first time connecting you will be prompted with a message asking if you want to connect. Type "yes"
 
 It will then ask you for your password, enter the password you created earlier.
-You will then be greeted with this in your terminal: ![Image](termninal1ss.png)
+You will then be greeted with this in your terminal: ![Image](termnina1ss.png)
 
 # Step 4: Running Commands
 Then tried running some commands. Some you could use are 
