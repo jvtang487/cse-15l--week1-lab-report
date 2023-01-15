@@ -27,3 +27,5 @@ Then tried running some commands. Some you could use are
 * cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/
 * cat /home/linux/ieng6/cs15lwi23/public/hello.txt
 it should look something like this: ![Image](terminal2ss.png)
+  
+To log out use: Control + D or run the command "exit".
