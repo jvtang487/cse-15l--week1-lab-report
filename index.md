@@ -1,6 +1,7 @@
 # Step 1 CSE 15L Account
 First you will need to find your course specific account using the link:
 [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)
+Your course specific account should have the format cs15lwi23zz with zz being replaced with your specific letters.
 I then found and clicked on my course specific account and reset the password.
 
 # Step 2 Visual Studio Code
@@ -18,7 +19,7 @@ It will then ask you for your password, enter the password you created earlier.
 You will then be greeted with this in your terminal: ![Image](terminal1ss.png)
 
 # Step 4: Running Commands
-Then tried running some commands. Some you could use are 
+Then I tried running some commands to test the terminal. Some commands that you could use are:
 * cd ~
 * cd
 * ls -lat
