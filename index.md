@@ -2,14 +2,14 @@
 First you will need to find your course specific account using the link:
 [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php)
 Your course specific account should have the format cs15lwi23zz with zz being replaced with your specific letters.
-I then found and clicked on my course specific account and reset the password.
+After finding your course specific account you reset the password. A tutorial can be found here: [tutorial](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit)
 
 # Step 2 Visual Studio Code
 Visit the Visual Studio Code website ([https://code.visualstudio.com/)](https://code.visualstudio.com/)) and follow the instructions to download and install VS Code.
 Open VS code and should look something like this:![Image](vscodess.png)
 
 # Step 3: Connecting Remotely
-Open a terminal in vs code, either by using the terminal tab and opening an new terminal or using the command "control + `" 
+Open a terminal in VS code, either by using the terminal menu and opening an new terminal or using the command "control + `" 
 Once you have the terminal open type in this command: $ ssh cs15lwi23zz@ieng6.ucsd.edu but replace the zz with the letters for your course specific account.
 Note that you do not need to type "$"
 
@@ -19,7 +19,7 @@ It will then ask you for your password, enter the password you created earlier.
 You will then be greeted with this in your terminal: ![Image](terminal1ss.png)
 
 # Step 4: Running Commands
-Then I tried running some commands to test the terminal. Some commands that you could use are:
+Then tryrunning some commands to test the terminal. Some commands that you could use are:
 * cd ~
 * cd
 * ls -lat
