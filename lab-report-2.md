@@ -18,6 +18,9 @@ The query is changed in the url value from blank to the message "hello" this in 
 For this usage the same method, arguments, and values are called and are relevant. The only change is that query is changed with a new message. The `servString` holds both this new string and the old string. But they are seperated by lines because of the `\n` that is added to string in the previous call.
 
 # Part 2:
+## Code:
+
+
 ## Failure Inducing Code:
 `   @Test
   public void testReversed2(){
@@ -33,4 +36,9 @@ For this usage the same method, arguments, and values are called and are relevan
   }
   `
  ## The Symmptom:
+ ![Image](https://github.com/jvtang487/cse-15l-lab-reports/blob/main/lab%20report%202/failure%20inducing.png)
+ Both of the inputs are tested however only `testReversed2` induces a failure when `testReversed` should also induce a failure.
+ 
+ ## The Bug:
+ 
  
