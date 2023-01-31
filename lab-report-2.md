@@ -22,12 +22,12 @@ For this usage the same method, arguments, and values are called and are relevan
 ![Image](codebug.png)
 
 ## Failure Inducing Code:
-Failing : `int[] input1 = {3, 4, 5, 6 };`
+`int[] input1 = {3, 4, 5, 6 };`
 `assertArrayEquals(new int[]{6, 5, 4, 3}, ArrayExamples.reversed(input1));`
 
 
 ## Input No Failure:
-No Failure: `int[] input1 = { };`
+`int[] input1 = { };`
 `assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));`
 
 ## The Symmptom:
