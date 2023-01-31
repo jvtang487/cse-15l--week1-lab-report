@@ -26,7 +26,7 @@ For this usage the same method, arguments, and values are called and are relevan
 
 ## Input No Failure:
 `int[] input1 = { };`
-  `
+
 ## The Symmptom:
  ![Image](failure inducing.png)
  Both of the inputs are tested however only `testReversed2` induces a failure when `testReversed` should also induce a failure.
