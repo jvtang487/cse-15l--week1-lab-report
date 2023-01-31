@@ -1,2 +1,2 @@
 String Server Code: 
-![Image](
+![Image](StringServerCode.png)
