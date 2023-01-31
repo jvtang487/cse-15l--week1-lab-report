@@ -28,15 +28,15 @@ For this usage the same method, arguments, and values are called and are relevan
 ## Input No Failure:
  ` int[] input1 = { };
   `
- ## The Symmptom:
+## The Symmptom:
  ![Image](failure inducing.png)
  Both of the inputs are tested however only `testReversed2` induces a failure when `testReversed` should also induce a failure.
  
- ## The Bug:
+## The Bug:
  The bug of the code is `arr[i] = newArray[arr.length - i - 1];` and `return arr;` to fix this you just need to swap newArray and arr and return new array.
  The fixed code should look like this: `newArray[i] = arr[arr.length - i - 1];` and `return newArray;`
  
  This fixes the issue because originally it is updating the values in the old array with the new array which only has values of 0. By swapping the two it allows the new array to be updated with the reverse values and return a reversed list. 
  
- # Part 3:
+# Part 3:
  Somethings that I learned that I learned were what each part of a URL means. As well as how to run a server from a local computer. I also learned how to change what you see on that website by changing the URL. From week 3 I learned how to properly write test cases and the uses for them.
