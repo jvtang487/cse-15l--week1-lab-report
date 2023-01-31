@@ -22,11 +22,10 @@ For this usage the same method, arguments, and values are called and are relevan
 ![Image](codebug.png)
 
 ## Failure Inducing Code:
-` 
-    int[] input1 = {3, 4, 5, 6 };
-  `
+`int[] input1 = {3, 4, 5, 6 };`
+
 ## Input No Failure:
- ` int[] input1 = { };
+`int[] input1 = { };`
   `
 ## The Symmptom:
  ![Image](failure inducing.png)
