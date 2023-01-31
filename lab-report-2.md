@@ -22,21 +22,49 @@ For this usage the same method, arguments, and values are called and are relevan
 ![Image](codebug.png)
 
 ## Failure Inducing Code:
-`int[] input1 = {3, 4, 5, 6 };`
-`assertArrayEquals(new int[]{6, 5, 4, 3}, ArrayExamples.reversed(input1));`
+```
+ @Test
+  public void testReversed2(){
+    int[] input1 = {3, 4, 5, 6 };
+    assertArrayEquals(new int[]{6, 5, 4, 3}, ArrayExamples.reversed(input1));
+  }
+ ```
 
 
 ## Input No Failure:
-`int[] input1 = { };`
-`assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));`
+```
+int[] input1 = { };
+assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+```
 
 ## The Symmptom:
  ![Image](failure inducing.png)
  Both of the inputs are tested however only `testReversed2` induces a failure when `testReversed` should also induce a failure.
  
 ## The Bug:
+ Bug Code:
+ ```
+   static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+  ```
  The bug of the code is `arr[i] = newArray[arr.length - i - 1];` and `return arr;` to fix this you just need to swap newArray and arr and return new array.
- The fixed code should look like this: `newArray[i] = arr[arr.length - i - 1];` and `return newArray;`
+ 
+ Fixed Code:
+ ```
+   static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+  ```
+ The bug code was changed look like this: `newArray[i] = arr[arr.length - i - 1];` and `return newArray;`
  
  This fixes the issue because originally it is updating the values in the old array with the new array which only has values of 0. By swapping the two it allows the new array to be updated with the reverse values and return a reversed list. 
  
