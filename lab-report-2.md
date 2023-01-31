@@ -74,7 +74,7 @@ int[] input1 = { };
 assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ```
 
-## The Symmptom:
+## The Symptom:
  ![Image](failure inducing.png)
  Both of the inputs are tested however only `testReversed2` induces a failure when `testReversed` should also induce a failure.
  
