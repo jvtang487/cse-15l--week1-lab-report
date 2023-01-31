@@ -2,10 +2,10 @@
 
 # Part 1:
 ## String Server Code: 
-![Image](https://github.com/jvtang487/cse-15l-lab-reports/blob/main/lab%20report%202/StringServerCode.png)
+![Image](StringServerCode.png)
 
 ## Use of /add-message:
-![Image](https://github.com/jvtang487/cse-15l-lab-reports/blob/main/lab%20report%202/addmessage1.png)
+![Image](addmessage1.png)
 
 The method that is called the handleRequest method.
 The arguments that are relevant are the if statements as they check the path and query to check if they need to add certain message or just display a message.
@@ -13,13 +13,13 @@ The values that are relevant is the string `servString` as this holds the value 
 
 The query is changed in the url value from blank to the message "hello" this in return changes the value of the single string to also "hello". 
 
-![Image](https://github.com/jvtang487/cse-15l-lab-reports/blob/main/lab%20report%202/addmessage2.png)
+![Image](addmessage2.png)
 
 For this usage the same method, arguments, and values are called and are relevant. The only change is that query is changed with a new message. The `servString` holds both this new string and the old string. But they are seperated by lines because of the `\n` that is added to string in the previous call.
 
 # Part 2:
 ## Code:
-![Image](https://github.com/jvtang487/cse-15l-lab-reports/blob/main/lab%20report%202/codebug.png)
+![Image](codebug.png)
 
 ## Failure Inducing Code:
 `   @Test
@@ -36,7 +36,7 @@ For this usage the same method, arguments, and values are called and are relevan
   }
   `
  ## The Symmptom:
- ![Image](https://github.com/jvtang487/cse-15l-lab-reports/blob/main/lab%20report%202/failure%20inducing.png)
+ ![Image](failure inducing.png)
  Both of the inputs are tested however only `testReversed2` induces a failure when `testReversed` should also induce a failure.
  
  ## The Bug:
