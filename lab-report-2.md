@@ -22,18 +22,11 @@ For this usage the same method, arguments, and values are called and are relevan
 ![Image](codebug.png)
 
 ## Failure Inducing Code:
-`   @Test
-  public void testReversed2(){
+` 
     int[] input1 = {3, 4, 5, 6 };
-    assertArrayEquals(new int[]{6, 5, 4, 3}, ArrayExamples.reversed(input1));
-  }
   `
 ## Input No Failure:
- ` @Test
-  public void testReversed() {
-    int[] input1 = { };
-    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
-  }
+ ` int[] input1 = { };
   `
  ## The Symmptom:
  ![Image](failure inducing.png)
