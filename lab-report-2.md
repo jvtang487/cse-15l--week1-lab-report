@@ -7,11 +7,9 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    // The one bit of state on the server: a number that will be manipulated by
-    // various requests.
+    String servString = "";
 
     public String handleRequest(URI url) {
-        String servString = "";
         if (url.getPath().equals("/")) {
             return servString;
         }  
@@ -48,10 +46,10 @@ class StringServer {
 ![Image](addmessage1.png)
 
 The method that is called the handleRequest method.
-The arguments that are relevant are the if statements as they check the path and query to check if they need to add certain message or just display a message.
+The arguments that are relevant are the if statements as they check the path. For example if the path is add-message it will add the message or the thing after the "/". For the query to check if they need to add certain message or just display a message. The query checks for the message that will be added to the page or the thing after the "s" and "=".
 The values that are relevant is the string `servString` as this holds the value of the single string. The url is also relevant as this is what is read by the code to detemerine what gets added to the string. The parameter of `"="` and `"s"` is also relevant as this splits the query from the path making it easier to read the String needed to be added.
 
-The query is changed in the url value from blank to the message "hello" this in return changes the value of the single string to also "hello". 
+The query is changed in the url value from blank to the message "hello". This in return changes the value of the single string to also "hello". 
 
 ![Image](addmessage2.png)
 
@@ -66,6 +64,7 @@ For this usage the same method, arguments, and values are called and are relevan
     assertArrayEquals(new int[]{6, 5, 4, 3}, ArrayExamples.reversed(input1));
   }
  ```
+ This input is the array that is used to test the reversed method. The method is supposed to reverse the values of the old input array and make it's array have an array that is inversed. This method doesn't work as the code is not updating the old array correctly.
 
 
 ## Input No Failure:
@@ -73,6 +72,7 @@ For this usage the same method, arguments, and values are called and are relevan
 int[] input1 = { };
 assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
 ```
+This input does not produce a failure because when you reverse and empty array it will be the same since they are both empty. Also this reversed method uses a clone array to reverse but a clone of an empty array is empty so it will always pass.
 
 ## The Symptom:
  ![Image](failure inducing.png)
