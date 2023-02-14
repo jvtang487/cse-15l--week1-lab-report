@@ -34,6 +34,8 @@ grep -c "Athens" grep-results.txt
 
 The `-c` option gets the count of the amount of lines or files with the specific string that we are looking for. This is good when you need get a count of how many fiels there are of a certain string.
 
+## -l command option
+
 ```
 grep -l "Lucayans" berlitz2/*.txt
 berlitz2/Bahamas-History.txt
@@ -52,6 +54,8 @@ find-results.txt
 grep-results.txt
 ```
 The `-r` feature seaches recursively throughout all the files and directories, and the subdirectories looking for that specific string and the `l` modifys it so that it returns the files that contains it.
+
+## -o command option
 
 ```
 grep -o "Cuba" grep-results.txt 
