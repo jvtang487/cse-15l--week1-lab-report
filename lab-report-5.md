@@ -1,6 +1,6 @@
 # Lab Report 5
 
-A lab report that I liked was lab report 3. I liked the idea of looking up commands and learning what they do. It helped me look up ccertain commands that helped me with the skill demo that week like using -rl to find a certain file. I also feel like it's something that I would do outside of this class. I know eventually I will have to look up how to use a certain command or the different options I can use with it. This time to do it differently I will use some options of the find command. Also using ChatGPT as the way to find out how to use the options.
+A lab report that I liked was lab report 3. First I decided that I wanted to look up the different command line options for grep as I thought it would be the most useful for the task we had that week. I found a [website](https://en.wikibooks.org/wiki/Grep) that showed the different command line options. I then tested different types of options depending on the description that was given. I screenshotted the outcome and wrote a few sentences explaining what occured. This time to do it differently I will use some options of the find command. Also using ChatGPT as the way to find out how to use the options.
 
 ## find -name
 ![Image](findnamess.png)
