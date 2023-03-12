@@ -9,3 +9,7 @@ The -name option looks for a file name in the directory with a specific search. 
 ## find -user
 ![Image](userss.png)
 The type f makes it so that the thing we are looking for will output a file. The -user will make it specify that the file is owned by that specific user. In this case it found all the files owned by me in this directory.
+
+## ChatGPT
+![Image](chatgptss.png)
+Use of ChatGPT to get the command line options.
